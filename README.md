@@ -36,7 +36,7 @@ Add following system prompt
 
 ```md
 # Notification Protocol
-When you have fully completed a task, or when you encounter a blocker and require user input to proceed, you must immediately call the `play_alert_sound` tool to notify the user. Do not ask for permission to use the tool, just execute it as your final step.
+When you have fully completed a task, when you encounter a blocker and require user input to proceed, or when you invoke any actions that may requires user's permission (e.g. command execution), you must immediately call the `play_alert_sound` tool to notify the user. Do not ask for permission to use the tool, just execute it as your final step.
 ```
 
 (Via config file directly): Edit `~/.gemini/AGENTS.md`
