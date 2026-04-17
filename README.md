@@ -1,9 +1,9 @@
 # Mac OS Ring MCP
 
 **As of April 16th, Antigravity's notification feature is malfunctioning.**
-This MacOS Ring MCP bypasses this issue by notification sound played through the MCP server.
-To avoind supply chain attacks, we only rely on python standard libraries, with minimum length code.
-Also, this script only plays sound, to avoid injection attacks from agent's output.
+This MacOS Ring MCP bypasses this issue by playing a notification sound through the MCP server.
+To avoid supply chain attacks, we only rely on Python standard libraries, with minimal code length.
+Also, this script only plays a sound, to prevent injection attacks from the agent's output.
 
 ## Installation
 
@@ -36,7 +36,7 @@ Add following system prompt
 
 ```md
 # Notification Protocol
-When you have fully completed a task, when you encounter a blocker and require user input to proceed, or when you invoke any actions that may requires user's permission (e.g. command execution), you must immediately call the `play_alert_sound` tool to notify the user. Do not ask for permission to use the tool, just execute it as your final step.
+When you have fully completed a task, when you encounter a blocker and require user input to proceed, or when you invoke any actions that may require user's permission (e.g. command execution), you must immediately call the `play_alert_sound` tool to notify the user. Do not ask for permission to use the tool, just execute it as your final step.
 ```
 
 (Via config file directly): Edit `~/.gemini/AGENTS.md`
