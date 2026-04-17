@@ -47,3 +47,28 @@ When you have fully completed a task, when you encounter a blocker and require u
 3. Navigate to the Rules tab.
 4. Click the + Global button to ensure this rule applies to every project you open (or + Workspace if you only want it for the current folder).
 5. Paste the rule text (provided below) into the editor and save it.
+
+## Usage for gemini-cli
+
+You can use this MCP server with the `gemini-cli`.
+
+### Manual Configuration
+Add the server details to the `mcpServers` object in your `~/.gemini/settings.json` (on macOS/Linux):
+
+```json
+{
+  "mcpServers": {
+    "macos-notifier-raw": {
+      "command": "python3",
+      "args": [
+        "/absolute/path/to/your/main.py"
+      ]
+    }
+  }
+}
+```
+
+### Using CLI Commands
+Alternatively, you can use the built-in commands of the Gemini CLI to add the MCP server.
+
+To verify the server is connected successfully, run the Gemini CLI and type `/mcp` to list all currently configured servers and their available tools.
